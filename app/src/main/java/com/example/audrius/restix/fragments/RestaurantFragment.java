@@ -169,7 +169,7 @@ public class RestaurantFragment extends Fragment{
             }
         });
 
-        
+
 
 
         return view;
