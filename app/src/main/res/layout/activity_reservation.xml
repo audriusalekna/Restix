@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        android:hint="Fist name"
+        android:inputType="textCapWords"
+        android:padding="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/surnameText"
+        android:hint="Last name"
+        android:inputType="textCapWords"
+        android:padding="5dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attendanceText"
+        android:hint="Table for?"
+        android:inputType="number"
+        android:maxLength="1"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:background="@drawable/reservation_borders"
+        android:id="@+id/dateText"
+        android:text="Reservation date"
+        android:maxLines="1"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:background="@drawable/reservation_borders"
+        android:layout_height="wrap_content"
+        android:text="Reservation time"
+        android:id="@+id/timeText"
+        android:maxLines="1"
+        android:padding="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Submit"
+            android:id="@+id/submitBtn"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:id="@+id/cancelBtn"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+

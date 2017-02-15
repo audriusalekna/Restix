@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.audrius.restix.fragments.RestaurantFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borders_rounded">
+
+
+        <fragment
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_height="200dp"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/cili"
+        android:background="#00000000"
+        android:id="@+id/imageView"
+        android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating"
+            android:layout_above="@+id/adress"
+            android:layout_alignLeft="@+id/restaurant_last_text"
+            android:layout_alignStart="@+id/restaurant_last_text" />
+
+        <TextView
+                android:id="@+id/restaurant_last_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_blank_fragment"
+            android:layout_marginTop="18dp"
+            android:textStyle="bold|italic"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/map"
+            android:layout_alignStart="@+id/map"></TextView>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="150dp"
+            android:lines="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/adress"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignLeft="@+id/rating"
+            android:layout_alignStart="@+id/rating" />
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="Call"
+        android:id="@+id/callBtn"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="make a reservation"
+        android:id="@+id/reservationBtn"/>
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+</FrameLayout>
