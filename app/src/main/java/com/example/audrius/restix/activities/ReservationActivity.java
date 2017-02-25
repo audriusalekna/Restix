@@ -33,6 +33,7 @@ public class ReservationActivity extends Activity {
         final TextView timeText = (TextView) findViewById(R.id.timeText);
         Button submitBtn = (Button) findViewById(R.id.submitBtn);
         Button cancelBtn = (Button) findViewById(R.id.cancelBtn);
+        Button orderBtn = (Button)findViewById(R.id.orderBtn);
 
         dateText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +83,15 @@ public class ReservationActivity extends Activity {
                 emailIntent.putExtra(Intent.EXTRA_TEXT, nameText.getText().toString() + " " + surnameText.getText().toString() + "\n"
                 + timeText.getText().toString() + "\n" + dateText.getText().toString());
                 startActivity(Intent.createChooser(emailIntent, "Send email..."));
+            }
+        });
+
+        orderBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent orderIntent = new Intent(getBaseContext(), OrderActivity.class);
+                orderIntent.putExtra("rest", false);
+                startActivity(orderIntent);
             }
         });
 

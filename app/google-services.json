@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "648442088817",
+    "firebase_url": "https://restix-c6c4d.firebaseio.com",
+    "project_id": "restix-c6c4d",
+    "storage_bucket": "restix-c6c4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:648442088817:android:af31818232ff96ec",
+        "android_client_info": {
+          "package_name": "com.example.audrius.restix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "648442088817-mu5af6cjf4iv0illt6hml07menst1t91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBZ-ZjonVSggteSoq5KfOdKxMmJUFd9_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

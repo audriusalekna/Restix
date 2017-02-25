@@ -5,15 +5,19 @@ package com.example.audrius.restix.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.preference.PreferenceActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 
 import com.example.audrius.restix.R;
 import com.example.audrius.restix.fragments.MainFragment;
 import com.example.audrius.restix.fragments.RestaurantFragment;
 import com.example.audrius.restix.objects.Restourant;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.TextHttpResponseHandler;
 
 import java.util.logging.Handler;
 
@@ -59,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         this.startActivity(myIntent);
 
     }
+
 
 
 }

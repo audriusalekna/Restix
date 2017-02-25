@@ -23,7 +23,6 @@ import java.util.ArrayList;
 
     public class CafeeAdapter extends RecyclerView.Adapter<RestourantViewHolder> {
         private ArrayList<Restourant> restourants;
-        private Handler handler;
 
         public CafeeAdapter(ArrayList<Restourant> restourants) {
             this.restourants = restourants;
